@@ -49,7 +49,7 @@ def NetPlot(net_histories,n_epch):
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
     plt.plot(accuracies2,color='black',marker='o')
-    plt.plot(val_accuracies2,color='red',marker='o')
+    plt.plot(val_accuracies2,color='green',marker='o')
     plt.ylim([0.70,1.0])
     plt.legend(['Train Data','Validation Data'],loc='lower right')
     plt.savefig('./proposed/Accuracy Diagram_CNN.jpg')
@@ -58,7 +58,7 @@ def NetPlot(net_histories,n_epch):
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.plot(losses2,color='black',marker='o')
-    plt.plot(val_losses2,color='red',marker='o')
+    plt.plot(val_losses2,color='green',marker='o')
     plt.legend(['Train Data','Validation Data'],loc='upper right')
     plt.savefig('./proposed/Loss Diagram_CNN.jpg')
 
